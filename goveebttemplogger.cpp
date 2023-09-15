@@ -87,7 +87,7 @@
 #include "uuid.h"
 
 /////////////////////////////////////////////////////////////////////////////
-static const std::string ProgramVersionString("GoveeBTTempLogger Version 2.20230906-1 Built on: " __DATE__ " at " __TIME__);
+static const std::string ProgramVersionString("GoveeBTTempLogger Version 2.20230906-2 Built on: " __DATE__ " at " __TIME__);
 /////////////////////////////////////////////////////////////////////////////
 std::string timeToISO8601(const time_t & TheTime, const bool LocalTime = false)
 {
@@ -2828,7 +2828,7 @@ int main(int argc, char **argv)
 			catch (const std::out_of_range& oor) { std::cerr << "Out of Range error: " << oor.what() << std::endl; exit(EXIT_FAILURE); }
 			break;
 		case 'd':
-			DaysBetweenDataDownload = 14;
+			DaysBetweenDataDownload = 1;
 			break;
 		case 'n':
 			UseBluetooth = false;
